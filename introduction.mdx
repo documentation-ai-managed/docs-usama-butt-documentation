@@ -1,0 +1,93 @@
+---
+title: Welcome to Usama Butt Documentation
+description: An overview of the default documentation space for organizing and managing project documentation, including key features and benefits.
+---
+
+## Overview
+
+Welcome to Usama Butt Documentation, your default space for organizing and managing all project documentation. You create structured guides, API references, and tutorials here. This platform simplifies documentation workflows with intuitive tools and collaboration features.
+
+Key benefits include centralized content management, version control integration, and customizable themes using the brand color `#3B82F6`. You organize pages hierarchically and embed interactive elements like code snippets and diagrams.
+
+## Key Features
+
+<Columns cols={3}>
+  <Card title="Intuitive Editor" icon="edit-3" href="/docs/editor">
+    Write Markdown and MDX with live previews. Add components like tabs and steps effortlessly.
+  </Card>
+  <Card title="Version Control" icon="git-branch" href="/docs/versions">
+    Track changes with Git integration. Roll back to previous versions easily.
+  </Card>
+  <Card title="Search & Navigation" icon="search" href="/docs/search">
+    Full-text search and sidebar navigation help you find content quickly.
+  </Card>
+</Columns>
+
+## Purpose and Use Cases
+
+You use this space for various documentation needs. Explore common scenarios below.
+
+<Tabs>
+  <Tab title="API Documentation" icon="code">
+    Document endpoints with request/response examples and parameter tables.
+  </Tab>
+  <Tab title="User Guides" icon="book-open">
+    Create step-by-step tutorials for onboarding new users.
+  </Tab>
+  <Tab title="Changelogs" icon="git-commit">
+    Maintain release notes with versioned updates and tags.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Apply the brand color `#3B82F6` consistently in custom CSS or themes. For example, set `--primary-color: #3B82F6;` in your styles.
+</Callout>
+
+## Get Started
+
+Follow these steps to orient yourself with the interface.
+
+<Steps>
+  <Step title="Create Your First Page" icon="plus">
+    Navigate to the sidebar and click "New Page". Choose MDX format for rich components.
+  </Step>
+  <Step title="Add Components" icon="puzzle">
+    Insert elements like `<Callout>` or `<Steps>` directly in the editor.
+  </Step>
+  <Step title="Preview and Publish" icon="eye">
+    Use the live preview pane. Save and publish to make it live.
+  </Step>
+</Steps>
+
+## Customize with Code
+
+Embed code examples seamlessly. Here's how you add a multi-language snippet.
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // Fetch documentation data
+  const response = await fetch('https://api.example.com/docs');
+  const docs = await response.json();
+  console.log(docs);
+  ```
+  ```python
+  # Fetch documentation data
+  import requests
+  response = requests.get('https://api.example.com/docs')
+  docs = response.json()
+  print(docs)
+  ```
+</CodeGroup>
+
+## Interface Orientation
+
+<ExpandableGroup>
+  <Expandable title="Sidebar Navigation" default-open="true">
+    Access pages, settings, and search from the left sidebar. Drag to reorder sections.
+  </Expandable>
+  <Expandable title="Editor Toolbar">
+    Find buttons for headings, code blocks, and components. Toggle dark mode for better focus.
+  </Expandable>
+</ExpandableGroup>
+
+This setup ensures you build comprehensive docs efficiently. Explore features to match your project's needs.

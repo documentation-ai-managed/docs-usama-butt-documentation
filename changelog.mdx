@@ -1,0 +1,139 @@
+---
+title: Changelog
+description: A record of updates and improvements to the Usama Butt Documentation platform.
+---
+
+## Recent Updates
+
+Stay informed about the latest enhancements to the Usama Butt Documentation platform. You access new features, performance improvements, and bug fixes through these releases. Check this page regularly to see how we evolve the platform to better serve your documentation needs.
+
+<Columns cols={3}>
+  <Card title="v1.2.0" icon="zap" href="#v120">
+    Real-time collaboration and search improvements.
+  </Card>
+  <Card title="v1.1.0" icon="settings" href="#v110">
+    Enhanced MDX components and theming.
+  </Card>
+  <Card title="v1.0.0" icon="rocket" href="#v100">
+    Initial platform launch with core features.
+  </Card>
+</Columns>
+
+<Callout kind="info">
+  Subscribe to our RSS feed or GitHub notifications to get updates automatically delivered to you.
+</Callout>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaborative editing for documentation pages
+- Introduced advanced full-text search with syntax highlighting
+
+## Improvements
+
+- Optimized page load times by `>30%` using lazy loading
+- Enhanced mobile responsiveness for better viewing on all devices
+
+## Bug Fixes
+
+- Fixed rendering issues with nested code blocks
+- Resolved authentication errors during session timeouts
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integrated custom MDX components like `<Steps>` and `<Tabs>`
+- Added brand color theming with `#3B82F6` as default blue
+
+## Improvements
+
+- Streamlined navigation with auto-generated sidebar
+- Better accessibility support including ARIA labels
+
+## Bug Fixes
+
+- Corrected parsing errors for special characters like `{` and `<`
+- Patched frontmatter validation for YAML compliance
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Core MDX documentation engine with YAML frontmatter support
+- Built-in components for `<Callout>`, `<Card>`, and `<Columns>`
+
+## Breaking Changes
+
+- Updated attribute syntax to require double quotes for strings
+
+## Bug Fixes
+
+- Initial setup resolved deployment issues on Vercel/Netlify
+
+</Update>
+
+## How to Upgrade
+
+Follow these steps to upgrade your Usama Butt Documentation instance to the latest version.
+
+<Steps>
+  <Step title="Backup Your Site" icon="database">
+    Create a full backup of your repository.
+  </Step>
+  <Step title="Pull Latest Changes" icon="git-pull-request">
+    
+    ```bash
+    git pull origin main
+    ```
+  </Step>
+  <Step title="Rebuild and Deploy" icon="rocket">
+    
+    ```bash
+    npm run build
+    npm run deploy
+    ```
+  </Step>
+</Steps>
+
+## Future Plans
+
+<ExpandableGroup>
+  <Expandable title="Upcoming v1.3.0 Features" default-open="false">
+
+    Plan to introduce AI-assisted content generation and multi-language support. You will generate documentation drafts automatically from code comments. Watch for beta access soon.
+
+  </Expandable>
+  <Expandable title="Version 2.0 Roadmap">
+
+    Enterprise features like role-based access control and analytics dashboards arrive in early 2025.
+
+  </Expandable>
+</ExpandableGroup>
+
+<Tabs>
+  <Tab title="Migration Guide" icon="book-open">
+
+    Review changes in each release. For `{breaking}` tagged updates, check migration notes.
+
+    <CodeGroup tabs="npm,yarn">
+      ```bash
+      npm update usama-butt-docs@latest
+      ```
+      ```bash
+      yarn upgrade usama-butt-docs@latest
+      ```
+    </CodeGroup>
+
+  </Tab>
+  <Tab title="Contribute" icon="github">
+
+    Found a bug? Submit pull requests via GitHub. Use the issue template for feature requests.
+
+  </Tab>
+</Tabs>
